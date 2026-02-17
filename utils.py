@@ -1,7 +1,14 @@
-from utils import factorial, gcd
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
 
-print("Factorial of 5:", factorial(5))
-print("GCD of 18 and 24:", gcd(18, 24))
+def factorial(n):
+    if n < 0:
+        raise ValueError("n must be >= 0")
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
 
 
 def isPrime(n):

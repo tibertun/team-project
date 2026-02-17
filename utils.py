@@ -1,7 +1,3 @@
-from utils import factorial, gcd
-
-print("Factorial of 5:", factorial(5))
-print("GCD of 18 and 24:", gcd(18, 24))
 
 
 def isPrime(n):
